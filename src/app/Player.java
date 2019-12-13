@@ -75,10 +75,9 @@ public class Player {
     public List<Item> getActiveItems(){
         List<Item> activeItems = new ArrayList<Item>();
         for(Item i : items){
-            if(i.active) activeItems.add(i);
+            if(i.active()) activeItems.add(i);
         }
         return activeItems;
-        
     }
 
 }
